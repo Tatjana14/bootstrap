@@ -23,7 +23,11 @@ ul, li{
 }
 
 .header__container{
-    padding: 18px 117px;
+    max-width: 1205px;
+    padding: 19px 0;
+}
+.header__logo{
+    margin-right: 75px;
 }
 
 .menu__list-item{
@@ -31,4 +35,27 @@ ul, li{
 }
 .menu__list-item:last-child{
     margin-right: 0px;
+}
+.header__social{
+    margin-right: 45px;
+}
+.social__list-item{
+    margin-right: 35px;
+}
+.social__list-item:last-child{
+    margin-right: 0;
+}
+.btn{
+    border-radius: 2px;
+    font-family: 'QuicksandBold', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+}
+.btn--primary{
+    width: 113px;
+    height: 43px;
+}
+.btn--started{
+    background-color:#D2E1FF;
+    color: #3A79FF;
 }
