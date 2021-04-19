@@ -15,13 +15,15 @@
     src: url("./../assets/fonts/Quicksand-Bold.ttf") format("truetype");
 }
 
-ul, li{
+ul, li, p, h2, h3, h4{
     list-style: none;
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
 }
-
+button{
+    border-color: transparent;
+}
 .header__container{
     max-width: 1205px;
     padding: 19px 0;
@@ -58,4 +60,71 @@ ul, li{
 .btn--started{
     background-color:#D2E1FF;
     color: #3A79FF;
+}
+.plan__wrapper{
+    background: url(./assets/img/bg_plan.png) no-repeat;
+    padding-top: 90px ;
+}
+.title__text,
+.title__slogan,
+.title__slogan-bold{
+    color: #3D4F9F;
+}
+.title__text{
+    font-family: "RobotoMedium", sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.title__plan{
+    margin-bottom: 15px;
+}
+.title__slogan{
+    font-family: "QuicksandMedium", sans-serif;
+    font-size: 24px;
+}
+.title__slogan-big{
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 28px;
+}
+
+.title__slogan-bold{
+    font-family: "QuicksandBold", sans-serif;
+}
+.text{
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 15px;
+    line-height: 29px;
+    color: #8D96BD;
+}
+.plan__text{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.add__wrapper{
+    background-color: #F5F8FF;
+}
+
+.app__text{
+    padding-right: 45px;
+}
+.app__slogan{
+    font-size: 36px;
+}
+
+.app__btn{
+    width: 130px;
+    height: 43px;
+}
+.btn--dark-blue{
+    background-color: #4C85FF;
+    color: #fff;
+}
+.btn--transparent{
+    background-color: transparent;
+}
+.btn--features{
+    color: #ADB4D2;
+    border-color: #D1D1E4;
 }
