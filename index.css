@@ -14,7 +14,14 @@
     font-family: "QuicksandBold";
     src: url("./../assets/fonts/Quicksand-Bold.ttf") format("truetype");
 }
-
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("./assets/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url("./assets/fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
 ul, li, p, h2, h3, h4{
     list-style: none;
     margin-block-start: 0;
@@ -75,6 +82,7 @@ button{
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 .title__plan{
     margin-bottom: 15px;
@@ -102,12 +110,18 @@ button{
     margin-left: 35px;
     margin-right: 35px;
 }
-.add__wrapper{
+.app__wrapper{
     background-color: #F5F8FF;
+    padding: 208px 0 216px;
+}
+.app__title{
+    margin-bottom: 27px;
 }
 
 .app__text{
     padding-right: 45px;
+    margin-bottom: 50px;
+    margin-top: 27px;
 }
 .app__slogan{
     font-size: 36px;
@@ -127,4 +141,50 @@ button{
 .btn--features{
     color: #ADB4D2;
     border-color: #D1D1E4;
+    position: relative;
+    left: -4px;
+}
+.app__illustration{
+    width: 655px;
+    height: 435px;
+}
+.app__img{
+    position: absolute;
+    left: -26%;
+    top: -38px;
+}
+.about__wrapper{
+    background-image: url(./assets/img/clouds.svg);
+    min-height: 885px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+.about__info{
+    margin-top: 92px;
+}
+.about__subtitle{
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 14px;
+    color: #4074F8;
+    line-height: 25px;
+}
+.about__text{
+    font-family: "OpenSansSemiBold", sans-serif;
+    font-size: 11px;
+    color: #ADB3CB;
+    padding: 25px 10px 0;
+    line-height: 20px;
+}
+.btn--more{
+    background-color:#FFD7D7;
+    color: #D43F3F;
+}
+
+.text__between{
+    margin: 0 48px;
+}
+.about__buttons{
+    margin-top: 120px;
 }
