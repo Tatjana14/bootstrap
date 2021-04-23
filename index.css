@@ -32,6 +32,7 @@ ul, li, p, h2, h3, h4{
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
+    margin-bottom: 0;
 }
 button{
     border-color: transparent;
@@ -160,7 +161,7 @@ button{
 }
 .about__wrapper{
     background-image: url(./assets/img/clouds.svg);
-    min-height: 885px;
+    padding: 171px 0;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -257,6 +258,7 @@ button{
 .slider__item-inner{
     padding: 0 40px 0 35px;
     width: 100%;
+    flex-wrap: wrap;
 }
 .slider__collage{
     display: grid;
@@ -424,4 +426,43 @@ button{
 
 .help__card-body-btn:focus {
     outline: 1px solid transparent;
+}
+
+/* TESTIMONIALS */
+
+.testimonials__wrapper{
+    padding: 109px 0;
+    background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+}
+.testimonials__title{
+    margin-bottom: 31px;
+}
+.testimonials__slogan{
+    font-family: "QuicksandMedium", sans-serif;
+    color: #3D4F9F;
+    font-size: 36px;
+    line-height: 45px;
+}
+.testimonials__text{
+    font-family: "OpenSansSemiBold", sans-serif;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #A4ABC8;
+    margin-top: 14px;
+}
+.testimonials__item{
+    background-color: #fff;
+    border: 1px solid #D8E3FE;
+    box-shadow: 0px 5px 50px #F3F5FA;
+}
+.testimonials__item-text{
+    padding: 41px 71px 53px 69px;
+    line-height: 24px;
+}
+.testimonials__wrapper .carousel-control-next{
+    display: none;
+}
+.testimonials__wrapper .carousel-control-prev{
+    display: none;
 }
