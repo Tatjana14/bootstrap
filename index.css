@@ -34,6 +34,9 @@ ul, li, p, h2, h3, h4{
     padding-inline-start: 0;
     margin-bottom: 0;
 }
+input{
+    border-color: transparent;
+}
 button{
     border-color: transparent;
 }
@@ -61,6 +64,7 @@ button{
     margin-right: 0;
 }
 .btn{
+    padding: 0;
     border-radius: 2px;
     font-family: 'QuicksandBold', sans-serif;
     font-size: 13px;
@@ -77,6 +81,7 @@ button{
 .plan__wrapper{
     background: url(./assets/img/bg_plan.png) no-repeat;
     padding-top: 90px ;
+    background-size: cover;
 }
 .title__text,
 .title__slogan,
@@ -116,6 +121,16 @@ button{
     margin-left: 35px;
     margin-right: 35px;
 }
+/* SPONSORS */
+.sponsors__wrapper{
+    padding: 58px 0 59px;
+}
+
+.sponsors__img:hover .sponsors__svg{
+    fill: #5982E7;
+}
+/* APP */
+
 .app__wrapper{
     background-color: #F5F8FF;
     padding: 208px 0 216px;
@@ -137,6 +152,7 @@ button{
     width: 130px;
     height: 43px;
 }
+
 .btn--dark-blue{
     background-color: #4C85FF;
     color: #fff;
@@ -151,8 +167,14 @@ button{
     left: -4px;
 }
 .app__illustration{
-    width: 655px;
-    height: 435px;
+    position: absolute;
+    background-image: url(./assets/img/illustration.png);
+    background-repeat: no-repeat;
+    width: 710px;
+    height: 500px;
+    background-position-x: 80%;
+    background-position-y: 18%;
+    top: -38px;
 }
 .app__img{
     position: absolute;
@@ -451,6 +473,12 @@ button{
     color: #A4ABC8;
     margin-top: 14px;
 }
+.testimonials__slider .carousel-indicators{
+    bottom: -47px;
+}
+.testimonials__slider .carousel-inner{
+    height: 206px;
+}
 .testimonials__item{
     position: relative;
     background-color: #fff;
@@ -458,7 +486,7 @@ button{
     box-shadow: 0px 5px 50px #F3F5FA;
 }
 .testimonials__item-text{
-    padding: 41px 71px 53px 69px;
+    padding: 40px 70px 53px 70px;
     line-height: 24px;
 }
 .testimonials__wrapper .carousel-control-next{
@@ -470,5 +498,94 @@ button{
 .testimonials__item-img{
     position: absolute;
     z-index: 999999;
-    bottom: -10%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/* START */
+
+.start__wrapper{
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    padding: 91px 0;
+}
+
+.start__title,
+.start__slogan,
+.start__text{
+    color: #fff;
+}
+.start__title{
+    margin-bottom: 16px;
+}
+.start__slogan{
+    font-family: "QuicksandRegular", sans-serif;
+}
+.title__slogan-medium{
+    font-family: "QuicksandMedium", sans-serif;
+}
+.start__text{
+    letter-spacing: 0.03em;
+    padding: 0 38px;
+    margin-bottom: 60px;
+}
+.btn--white-bg{
+    background-color: #fff;
+    width: 130px;
+    height: 43px;
+    color: #565F82;
+    box-shadow: 0px 5px 15px #6480E8;
+}
+.btn--white-border{
+    font-family: "QuicksandMedium", sans-serif;
+    border: 1px solid #A0B4FF;
+    color: #C7D3FF;
+    width: 155px;
+    height: 43px;
+    position: relative;
+    left: -4px;
+}
+
+/* NEWSLETTER */
+
+.newsletter__wrapper{
+    padding: 118px 0;
+}
+.newsletter__title{
+    font-family:  "QuicksandBold", sans-serif;
+    color: #3D4F9F;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+.newsletter__text{
+    font-size: 14px;
+}
+.newsletter__subscription{
+    padding-left: 60px;
+}
+.newsletter__email{
+    width: 279px;
+    height: 59px;
+    background: #EFEFF7;
+    border-radius: 5px;
+}
+.newsletter__email::placeholder{
+    font-family:  "QuicksandBold", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 23px;
+}
+.newsletter__btn{
+    width: 184px;
+    height: 59px;
+    background: #4D6CE1;
+    box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-left: 14px;
+    color: #fff;
 }
