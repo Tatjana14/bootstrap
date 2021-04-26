@@ -260,7 +260,7 @@ button{
 
 .resources__wrapper{
     background: #F5F8FF;
-    min-height: 865px;
+    padding: 104px 0 204px;
 }
 .resources__slogan{
     margin-bottom: 92px;
