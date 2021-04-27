@@ -41,10 +41,16 @@ button{
     border-color: transparent;
 }
 .header__container{
-    max-width: 1205px;
     padding: 19px 0;
 }
-.header__logo{
+.footer__container,
+.header__container{
+    max-width: 1205px;
+}
+.navbar{
+    padding: 0;
+}
+.logo__link{
     margin-right: 75px;
 }
 
@@ -54,7 +60,17 @@ button{
 .menu__list-item:last-child{
     margin-right: 0px;
 }
-.header__social{
+.menu__link{
+    padding: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #007bff;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+.header__social,
+.footer__social{
     margin-right: 45px;
 }
 .social__list-item{
@@ -78,6 +94,9 @@ button{
     background-color:#D2E1FF;
     color: #3A79FF;
 }
+
+/* PLAN */
+
 .plan__wrapper{
     background: url(./assets/img/bg_plan.png) no-repeat;
     padding-top: 90px ;
@@ -121,6 +140,26 @@ button{
     margin-left: 35px;
     margin-right: 35px;
 }
+.plan__btn{
+    margin-top: 20px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+}
+.img__play{
+    transform: translateY(-15%);
+    -webkit-transform: translateY(-15%);
+    -moz-transform: translateY(-15%);
+    -ms-transform: translateY(-15%);
+    -o-transform: translateY(-15%);
+}
+
 /* SPONSORS */
 .sponsors__wrapper{
     padding: 58px 0 59px;
@@ -588,4 +627,14 @@ button{
     -o-border-radius: 5px;
     margin-left: 14px;
     color: #fff;
+}
+
+/* FOOTER */
+
+.footer{
+    border-top: 1px solid #D8E3FE;
+}
+.footer__container{
+    padding: 100px 0;
+    
 }
