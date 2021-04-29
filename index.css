@@ -434,6 +434,12 @@ button{
         padding: 15px;
     }
 }
+@media (min-width: 1px) and (max-width: 720px){
+    .carousel-control-prev,
+    .carousel-control-next{
+        display: none;
+    }
+}
 @media (min-width: 1px) and (max-width: 470px){
     .slider__collage{
         display: grid;
@@ -603,8 +609,11 @@ button{
 /* START */
 
 .start__wrapper{
-    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    
     padding: 91px 0;
+    background: url(./assets/img/cloudsGet.svg), linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .start__title,
