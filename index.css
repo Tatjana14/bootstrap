@@ -181,6 +181,11 @@ button{
     background-repeat:no-repeat;
     background-position: 100% 130px;
     padding: 208px 0 216px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 .app__title{
     margin-bottom: 27px;
@@ -518,6 +523,7 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     padding: 16px 10px 50px 72px;
 }
 
