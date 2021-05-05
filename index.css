@@ -159,6 +159,12 @@ button{
     -ms-transform: translateY(-15%);
     -o-transform: translateY(-15%);
 }
+.plan__info{
+    display: none;
+}
+.plan__info-active{
+    display: block;
+}
 
 /* SPONSORS */
 .sponsors__wrapper{
@@ -523,8 +529,12 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
     padding: 16px 10px 50px 72px;
+}
+@media (min-width: 1px) and (max-width: 750px){
+    .help__card-body{
+        flex-wrap: wrap;
+    }
 }
 
 .help__card-text {
